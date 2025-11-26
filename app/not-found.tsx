@@ -31,18 +31,18 @@ export default function NotFound() {
 
           {/* Actions */}
           <div className="flex gap-4 justify-center flex-wrap pt-4">
-            <Link href="/">
-              <Button size="lg" className="group hover:scale-105 transition-all duration-300">
+            <Button size="lg" className="group hover:scale-105 transition-all duration-300" asChild>
+              <Link href="/">
                 <Home className="mr-2 group-hover:rotate-12 transition-transform" />
                 Kembali ke Beranda
-              </Button>
-            </Link>
-            <Link href="/#projects">
-              <Button size="lg" variant="outline" className="group hover:scale-105 transition-all duration-300">
+              </Link>
+            </Button>
+            <Button size="lg" variant="outline" className="group hover:scale-105 transition-all duration-300" asChild>
+              <Link href="/#projects">
                 <Search className="mr-2 group-hover:rotate-12 transition-transform" />
                 Jelajahi Proyek
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           </div>
         </div>
       </div>

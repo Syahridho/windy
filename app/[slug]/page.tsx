@@ -25,15 +25,18 @@ export default function ProjectDetailPage() {
     <>
       <Navigation />
       <div className="min-h-screen bg-background pt-16">
-      {/* Back Button */}
-      <div className="container mx-auto px-4 pt-8">
+     <div className="container mx-auto px-4 pt-8 relative z-20">
+      <Button 
+        variant="ghost" 
+        asChild 
+        className="group hover:bg-slate-100 hover:scale-105 transition-all duration-300"
+      >
         <Link href="/">
-          <Button variant="ghost" className="group hover:scale-105 transition-all duration-300">
-            <ArrowLeft className="mr-2 group-hover:-translate-x-1 transition-transform" />
-            Kembali ke Beranda
-          </Button>
+          <ArrowLeft className="mr-2 h-4 w-4 group-hover:-translate-x-1 transition-transform" />
+          Kembali ke Beranda
         </Link>
-      </div>
+      </Button>
+    </div>
 
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-16">
@@ -205,11 +208,11 @@ export default function ProjectDetailPage() {
                 Saya selalu terbuka untuk mendiskusikan proyek baru, ide kreatif, atau peluang untuk menjadi bagian dari visi Anda.
               </p>
               <div className="flex gap-4 justify-center flex-wrap">
-                <Link href="/">
-                  <Button size="lg" variant="secondary" className="hover:scale-105 transition-all duration-300">
+                <Button size="lg" variant="secondary" className="hover:scale-105 transition-all duration-300" asChild>
+                  <Link href="/">
                     Lihat Proyek Lainnya
-                  </Button>
-                </Link>
+                  </Link>
+                </Button>
                 <Button size="lg" variant="outline" className="bg-white/10 hover:bg-white/20 border-white/20 hover:scale-105 transition-all duration-300">
                   Hubungi Saya
                 </Button>
