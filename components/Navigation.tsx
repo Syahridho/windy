@@ -41,7 +41,7 @@ export default function Navigation() {
               <span className="text-primary-foreground font-bold text-xl">W</span>
             </div>
             <span className="font-bold text-xl hidden sm:block">
-              Windy<span className="text-primary">Dev</span>
+              Windy
             </span>
           </Link>
 

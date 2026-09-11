@@ -48,6 +48,13 @@ export const certificates = [
     date: "2025",
     image: "/certificates/seminar1.jpeg"
   },
+  {
+    id: "cert-2",
+    title: "BNSP web developer",
+    issuer: "HTML, CSS, JavaScript, Laravel, Next Js",
+    date: "2026",
+    image: "/certificates/seminar2.webp"
+  },
  
 ];
 
@@ -56,11 +63,11 @@ export const projects = [
     id: "iuran-pgri",
     title: "IURAN PGRI",
     slug: "iuran-pgri",
-    description: "Platform pencatatan lengkap yang dibangun dengan Laravel dan React",
+    description: "Platform pembayaran lengkap yang dibangun dengan Laravel dan React",
     longDescription: "Solusi pencatatan manual komprehensif dengan fitur dashboard admin. Dibangun dengan backend Laravel dan teknologi frontend modern.",
     image: "/projects/pgri.PNG",
     technologies: ["Laravel", "MySQL", "Tailwind CSS", "HTML", "CSS", "React"],
-    liveUrl: "http://iuran-pgri.my.id/",
+    liveUrl: "http://iuran.windyvivianosa.my.id",
     githubUrl: "https://github.com/Windyvivianosa5/iuran-pgri",
     features: [
       "Autentikasi dan otorisasi pengguna",
@@ -69,7 +76,7 @@ export const projects = [
       "Pelacakan riwayat iuran"
     ],
     challenges: "Mengimplementasikan manajemen inventori real-time dan mengoptimalkan query database untuk katalog iuran yang besar.",
-    outcome: "Berhasil meluncurkan platform yang melayani pengguna harian."
+    outcome: "Berhasil meluncurkan platform yang melayani pengguna harian dengan paymant gateway."
   },
   {
     id: "istana-siak",

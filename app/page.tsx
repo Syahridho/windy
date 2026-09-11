@@ -71,9 +71,6 @@ export default function Home() {
 
             {/* Name & Title */}
             <div className="space-y-4 animate-fade-in-up">
-              <Badge variant="secondary" className="text-sm px-4 py-2">
-                Tersedia untuk Freelance
-              </Badge>
               <h1 className="text-5xl md:text-7xl font-bold text-primary">
                 {personalInfo.name}
               </h1>
